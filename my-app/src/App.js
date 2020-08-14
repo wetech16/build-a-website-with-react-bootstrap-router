@@ -9,7 +9,7 @@ function App() {
   return (
     <React.Fragment>
       <Router>
-          <Switch>
+          {/* <Switch>
             <Route exact path="/">
               <Home />
             </Route>
@@ -21,6 +21,14 @@ function App() {
             <Route path="/about">
               <About />
             </Route>
+          </Switch> */}
+          <Switch>
+            <Route exact path="/" component={Home} />
+      
+            <Route path="/contact" component={Contact} />
+
+            <Route path="/about" component={About} />
+
           </Switch>
       </Router>
     </React.Fragment>
