@@ -3,7 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Contact from './views/Contact';
 import Home from './views/Home';
-import About from './views/About';
+import { About } from './views/About';
+import NoMatch from './views/NoMatch';
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
             <Route path="/contact" component={Contact} />
 
             <Route path="/about" component={About} />
+
+            <Route component={NoMatch} />
 
           </Switch>
       </Router>
