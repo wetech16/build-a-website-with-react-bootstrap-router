@@ -7,12 +7,15 @@ import { About } from './views/About';
 import NoMatch from './views/NoMatch';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
+import { Jumboron } from './components/Jumbotron';
+
 
 
 function App() {
   return (
     <React.Fragment>
     <NavigationBar />
+    <Jumboron />
       <Layout>
         <Router>
             {/* <Switch>
