@@ -6,11 +6,13 @@ import Home from './views/Home';
 import { About } from './views/About';
 import NoMatch from './views/NoMatch';
 import { Layout } from './components/Layout';
+import { NavigationBar } from './components/NavigationBar';
 
 
 function App() {
   return (
     <React.Fragment>
+    <NavigationBar />
       <Layout>
         <Router>
             {/* <Switch>
